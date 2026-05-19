@@ -1,0 +1,139 @@
+<!--** Created by Gemini **-->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Social Links</title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 400px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 24px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 12px;
+        }
+
+        li:last-child {
+            margin-bottom: 0;
+        }
+
+        li a {
+            display: flex;
+            align-items: center;
+            padding: 12px 20px;
+            background: #ffffff;
+            border-radius: 16px;
+            text-decoration: none;
+            color: #374151;
+            font-weight: 600;
+            transition: all 0.2s ease;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+            border: 1px solid #f3f4f6;
+        }
+
+        li a span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            margin-right: 12px;
+            border-radius: 10px;
+            transition: transform 0.2s ease;
+        }
+
+        /* アイコンの色と背景 */
+        .icon-bluesky { color: #0085ff; background: #e6f3ff; font-size: 1.25rem; }
+        .icon-misskey { background: #f0f0ff; } 
+        .icon-discord { color: #5865F2; background: #eeefff; font-size: 1.25rem; }
+        .icon-line { color: #06c755; background: #e6f9ee; font-size: 1.25rem; }
+        .icon-karotter { background-color: #e6f3ff; }
+
+        /* 画像ロゴのサイズ調整 */
+        .misskey-img, .karotter-img {
+            width: 24px;
+            height: 24px;
+            object-fit: contain;
+        }
+
+        li a:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            border-color: #d1d5db;
+        }
+
+        li a:hover span {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <ul>
+            <!-- Bluesky -->
+            <li>
+                <a href="https://bsky.app/profile/qwertyrandomreibot.bsky.social" target="_blank">
+                    <span class="icon-bluesky"><i class="fa-brands fa-bluesky"></i></span>
+                    Bluesky
+                </a>
+            </li>
+            <!-- Misskey -->
+            <li>
+                <a href="https://misskey.io/@Qwerty_randomrei_bot" target="_blank">
+                    <span class="icon-misskey">
+                        <img src="img/misskey.png" alt="Misskey" class="misskey-img">
+                    </span>
+                    Misskey
+                </a>
+            </li>
+            <!-- Discord -->
+            <li>
+                <a href="https://discord.com/oauth2/authorize?client_id=1472525944622420008&permissions=2048&integration_type=0&scope=bot" target="_blank">
+                    <span class="icon-discord"><i class="fa-brands fa-discord"></i></span>
+                    Discord
+                </a>
+            </li>
+            <!-- Karotter -->
+            <li>
+                <a href="https://karotter.com/profile/Qwertyrandomrei" target="_blank">
+                    <span class="icon-karotter">
+                        <img src="img/karotter.png" alt="Karotter" class="karotter-img">
+                    </span>
+                    Karotter
+                </a>
+            </li>
+        </ul>
+    </div>
+
+</body>
+</html>
